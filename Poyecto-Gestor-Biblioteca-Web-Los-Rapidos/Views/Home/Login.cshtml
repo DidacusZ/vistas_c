@@ -1,0 +1,39 @@
+﻿@model DAL.Modelos.Usuarios
+<!--
+<div id="content">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-5 mx-auto">
+                <div class="form-container">
+                    <p class="title">Bienvenido</p>
+
+                    <form class="form">
+                        <input type="email" class="input" placeholder="Email">
+                        <input type="password" class="input" placeholder="Contraseña">
+
+                        <button type="submit" class="col-12 form-btn" formaction="@Url.Action("Login", "Login")">Acceder</button>
+                        <button type="submit" class="col-12 form-btn" formaction="@Url.Action("Registro", "Login")">Registro</button>
+                    </form>
+
+                    <div class="buttons-container">
+                        <div class="apple-login-button" onclick="cargarContenido('olvidadoContraseñ.jsp')">
+                            Recuperar contraseña
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+<div class="contenedor form-login">
+    <p class="titulo">Bienvenido</p>
+    <form class="form">
+        <input type="email" class="input" placeholder="Email">
+        <input type="password" class="input" placeholder="Contraseña">
+        <button class="form-btn" formaction="@Url.Action("Login", "Login")">Acceder</button>
+        <button class="form-btn" formaction="@Url.Action("Registro", "Login")">Registrarse</button>
+        <button class="form-btn negro" formaction="@Url.Action("OlvidaContraseña", "Login")">Recuperar contraseña</button>
+    </form>    
+</div>
